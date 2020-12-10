@@ -35,25 +35,6 @@ namespace CryptoLab1
                 }
             }
 
-            /*
-            using (FileStream fs = new FileStream(_fullFilePath2, FileMode.Open, FileAccess.Read))
-            {
-                var count = fs.Read(array);
-
-                long pos = 0;
-                while (pos < count)
-                {
-                    byte[] small = new byte[128];
-                    if (pos + 128 < count)
-                    {
-                        Array.Copy(array, pos, small, 0, 128);
-                        encryption.Encrypt(small, ckey);
-                    }
-                    pos += 128;
-                }
-            }
-            */
-
         }
     }
 }
